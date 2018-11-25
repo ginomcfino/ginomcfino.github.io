@@ -1,7 +1,64 @@
 body {
-  padding-top: 5rem;
+  background-image: url("https://stmed.net/sites/default/files/code-wallpapers-30652-8909355.jpg");
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: 0.7;
 }
-.starter-template {
-  padding: 3rem 1.5rem;
+
+.image {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  position: center;
+  margin: 50px;
+  -webkit-animation:spin 30s linear infinite;
+  -moz-animation:spin 30s linear infinite;
+  animation:spin 30s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.text-center {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+p {
+  color: #ffffff;
+}
+
+.topnav {
+  font-family: 'Courier New Bold', Courier, monospace;
+  background-color: rgba(245, 245, 245, 0.219);
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgba(135, 206, 250, 0.322);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgba(70, 131, 180, 0.712);
+  color: white;
+}
+
+ul {
+  color: white;
 }
