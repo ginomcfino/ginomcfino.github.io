@@ -100,11 +100,11 @@ a:hover {
   width: 150px;
   height: 150px;
   margin: -75px 0 0 -75px;
-  border: 16px solid azure;
+  border: 7px solid whitesmoke;
   border-radius: 50%;
-  border-top: 16px solid darkolivegreen;
-  width: 120px;
-  height: 120px;
+  border-top: 7px solid darkolivegreen;
+  width: 90px;
+  height: 90px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }

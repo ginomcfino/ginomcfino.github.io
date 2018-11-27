@@ -31,171 +31,196 @@
 
 </head>
 
-<body>
-  <!-- Navigation -->
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a class="active" href="#about">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="projects.html">Projects</a></li>
-  </ul>
+<body onload="myFunction()" style="margin:0;">
+
+  <div id="loader"></div>
+
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+
+    <!-- Navigation -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="#about">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
 
 
-  <div class="container-fluid">
+    <div class="container-fluid">
 
-    <!-- Page Content -->
-    <div class="row">
-      <div class="col-lg-6 offset-lg-3 text-center">
-        <h1 class="mt-5" style="color:azure;margin:10px;border-radius:20px"><b>Get to know me better!</b></h1>
+      <!-- Page Content -->
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3 text-center">
+          <h1 class="mt-5" style="color:whitesmoke;margin:10px;border-radius:20px"><b>Get to know me better!</b></h1>
+        </div>
       </div>
-    </div>
 
-    <div class="spacer20"></div>
-    
-    <div class="col-lg-8 offset-lg-2 text-center">
-      <p>Come find out what I like and learn more about me!</p>
-    </div>
-
-    <div class="spacer20"></div>
-
-    <div class="col-lg-8 offset-lg-2 text-center">
-      <p style="color:whitesmoke;font-size:20px;font-weight: bold;">
-      First of all, let's get the social media out of the way:</p>
-    </div>
-
-    <div class="row text-center">
-      <div class="col-lg-2 offset-lg-3 text-center">
-        <p>
-          <a href="https://www.instagram.com/gino_mcfino/" style="color:whitesmoke">Instagram</a>
-          <br>
-          <img src="https://instagram-brand.com/wp-content/uploads/2016/11/app-icon2.png" style="width:30px;height:30px">
-        </p>
-      </div>
-      <div class="col-lg-2 text-center">
-        <p>
-          <a href="snapchat.jpeg" style="color:whitesmoke">Snapchat</a>
-          <br>
-          <img src="https://wwctfm.com/wp-content/uploads/2018/02/snapchat-logo-symbol-png-3.png" style="width:30px;height:30px">
-        </p>
-      </div>
-      <div class="col-lg-2 text-center">
-        <p>
-          <a href="https://www.facebook.com/ji.weiqi.3" style="color:whitesmoke">Facebook</a>
-          <br>
-          <img src="http://sookefolkmusicsociety.com/wp/wp-content/uploads/2016/11/facebook-logo.png" style="width:30px;height:30px">
-        </p>
-      </div>
-    </div>
-
-    <div class="spacer50"></div>
-
-    <div class="row text-center">
-      <div class="col-lg-8 offset-lg-2">
-        <p style="font-size:16pt;">
-          <br>
-          Now that you have me on social media, you may have noticed that GinoMcFino is actually my online name.
-          <br>
-          But you can just call me "Ji".
-          <br>
-          That's what all my friends call me ;-)
-          <br>
-          <br>
-          I am currently a freshman studying CS and Econ at Boston University,
-          <br>
-          I want to be my own CEO at a tech startup one day...
-          <br>
-          <br>
-          My favorite hobbies are:
-          <br>
-          Skiing, Programming, Photography, Netflix, YouTube, and a little bit of piano
-          <br>
-          <br>
-        </p>
-      </div>
-    </div>
-
-    <div class="spacer20"></div>
-    <div class="spacer50"></div>
-
-    <div class="col-lg-8 offset-lg-2 text-center">
-      <p style="color:whitesmoke;font-size:20px;font-weight: bold;">
-      Now, allow me show you some of the things that I like, hope you enjoy!
-      </p>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4 text-center">
-        <audio id="audio" src="As Long as You Love Me.mp3" ></audio>
-        <img class="image" src="https://d1itmove024qgx.cloudfront.net/0385aee312bb84281ef222d608d7cfe3359087dd.jpg" alt="As Long As You Love Me" style="width:300px;height:300px;border:2px solid whitesmoke;" onclick="play()"></img>
-        <br>
-        <audio id="audio" src="As Long as You Love Me.mp3" ></audio>
-        <input type="button" value="Pause Music" onclick="stop()">
-      </div>
-      <div class="col-lg-4 text-center">
-        <p>
-          <br><br><br>
-          Here are two of my favorite songs of all time! 
-          <br> 
-          <br>
-          <b>Click on the "CD" to listen</b>
-          <br>
-          <br>
-          Click on the songs to see the music videos on YouTube
-          <br>
-          <br>
-          <-- <a href="https://www.youtube.com/watch?v=0Gl2QnHNpkA" style="color:whitesmoke">As Long As You Love Me - Backstreet Boys</a> 
-          <br>
-          <a href="https://www.youtube.com/watch?v=34Na4j8AVgA" style="color:whitesmoke">Starboy - The Weekend</a> -->
-        </p>
-      </div>
-      <div class="col-lg-4 text-center">
-        <audio id="audio2" src="The Weeknd - Starboy (official) ft. Daft Punk.mp3"></audio>
-        <img class="image" src="https://images.genius.com/565381daa3a7d73a551d9738732b26d5.1000x1000x1.jpg" alt="Starboy" style="width:300px;height:300px;border:2px solid whitesmoke;" onclick="play2()"></img>
-        <br>
-        <audio id="audio2" src="The Weeknd - Starboy (official) ft. Daft Punk.mp3" ></audio>
-        <input type="button" value="Pause Music" onclick="stop2()">
-      </div>
-    </div>
-    
-
-    <div class="spacer20"></div>
-
-    <div class="row text-center">
+      <div class="spacer20"></div>
       
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <p>Come find out what I like and learn more about me!</p>
+      </div>
+
+      <div class="spacer20"></div>
+
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <p style="color:white;font-size:20px;font-weight: bold;">
+        First of all, let's get the social media out of the way:</p>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-lg-2 offset-lg-3 text-center">
+          <p>
+            <a href="https://www.instagram.com/gino_mcfino/" style="color:white">Instagram</a>
+            <br>
+            <img src="https://instagram-brand.com/wp-content/uploads/2016/11/app-icon2.png" style="width:30px;height:30px">
+          </p>
+        </div>
+        <div class="col-lg-2 text-center">
+          <p>
+            <a href="snapchat.jpeg" style="color:white">Snapchat</a>
+            <br>
+            <img src="https://wwctfm.com/wp-content/uploads/2018/02/snapchat-logo-symbol-png-3.png" style="width:30px;height:30px">
+          </p>
+        </div>
+        <div class="col-lg-2 text-center">
+          <p>
+            <a href="https://www.facebook.com/ji.weiqi.3" style="color:white">Facebook</a>
+            <br>
+            <img src="http://sookefolkmusicsociety.com/wp/wp-content/uploads/2016/11/facebook-logo.png" style="width:30px;height:30px">
+          </p>
+        </div>
+      </div>
+
+      <div class="spacer50"></div>
+
+      <div class="row text-center">
+        <div class="col-lg-8 offset-lg-2">
+          <p style="font-size:16pt;">
+            <br>
+            Now that you have me on social media, you may have noticed that GinoMcFino is actually my online name.
+            <br>
+            But you can just call me "Ji".
+            <br>
+            That's what all my friends call me ;-)
+            <br>
+            <br>
+            I am currently a freshman studying CS and Econ at Boston University,
+            <br>
+            I want to be my own CEO at a tech startup one day...
+            <br>
+            <br>
+            My favorite hobbies are:
+            <br>
+            Skiing, Programming, Photography, Netflix, YouTube, and a little bit of piano
+            <br>
+            <br>
+          </p>
+        </div>
+      </div>
+
+      <div class="spacer20"></div>
+
+      <div class="row text-center">
+        <div class="col-lg-4 offset-lg-2">
+          <p> 
+            I grew up in Dalian, China
+            <br>
+            <img src="Little Me.jpeg" alt="Little Me Pic" style="width:50%;border-radius:5%">
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            But I moved to Harwinton, CT when I was 12.
+            <br>
+            <img src="Current Me.jpeg" alt="Current Me Pic" style="width:50%;border-radius:5%">
+          </p>
+        </div>
+      </div>
+
+      <div class="spacer50"></div>
+
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <p style="color:white;font-size:20px;font-weight: bold;">
+        Now, allow me show you some of the things that I like, hope you enjoy!
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <audio id="audio" src="As Long as You Love Me.mp3" ></audio>
+          <img class="image" src="https://d1itmove024qgx.cloudfront.net/0385aee312bb84281ef222d608d7cfe3359087dd.jpg" alt="As Long As You Love Me" style="width:300px;height:300px;border:2px solid white;" onclick="play()"></img>
+          <br>
+          <audio id="audio" src="As Long as You Love Me.mp3" ></audio>
+          <input type="button" value="Pause Music" onclick="stop()">
+        </div>
+        <div class="col-lg-4 text-center">
+          <p>
+            <br><br><br>
+            Here are two of my favorite songs of all time! 
+            <br> 
+            <br>
+            <b>Click on the "CD" to listen</b>
+            <br>
+            <br>
+            Click on the songs to see the music videos on YouTube
+            <br>
+            <br>
+            <-- <a href="https://www.youtube.com/watch?v=0Gl2QnHNpkA" style="color:white">As Long As You Love Me - Backstreet Boys</a> 
+            <br>
+            <a href="https://www.youtube.com/watch?v=34Na4j8AVgA" style="color:white">Starboy - The Weekend</a> -->
+          </p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <audio id="audio2" src="The Weeknd - Starboy (official) ft. Daft Punk.mp3"></audio>
+          <img class="image" src="https://images.genius.com/565381daa3a7d73a551d9738732b26d5.1000x1000x1.jpg" alt="Starboy" style="width:300px;height:300px;border:2px solid white;" onclick="play2()"></img>
+          <br>
+          <audio id="audio2" src="The Weeknd - Starboy (official) ft. Daft Punk.mp3" ></audio>
+          <input type="button" value="Pause Music" onclick="stop2()">
+        </div>
+      </div>
+      
+
+      <div class="spacer20"></div>
+
+      <div class="row text-center">
+        
+      </div>
+      
+      <div class="spacer100"></div>
+      
+      <div class="row" style="margin:0px">
+        <div class="col-lg-4 text-center">
+          <img src="Brooklyn Bridge Park Comp 1 v2.jpg" alt="Brooklyn Bridge Park" style="border:2px solid white">
+        </div>
+        <div class="col-lg-4 text-center">
+          <img src="HOCR_2018.jpg" alt="HOCR 2018" style="border:2px solid white">
+        </div>
+        <div class="col-lg-4 text-center">
+          <img src="Star Trails.jpg" alt="Star Trails" style="border:2px solid white">
+        </div>
+      </div>
+      
+      <div class="spacer20"></div>
+
+      <div class="row" style="margin:0px">
+        <div class="col-lg-4 text-center">
+          <img src="NYC SK GH 1 v2.jpg" alt="Top of the Rock" style="border:2px solid white">
+        </div>
+        <div class="col-lg-4 text-center">
+          <img src="Mohegan Bluff.jpg" alt="Mohegan Bluff" style="border:2px solid white">
+        </div>
+        <div class="col-lg-4 text-center">
+          <img src="RI Beach House Night.jpg" alt="Rhode Island" style="border:2px solid white">
+        </div>
+      </div>
+
+      <div class="spacer20"></div>
+
+
+
     </div>
-    
-    <div class="spacer100"></div>
-    
-    <div class="row" style="margin:0px">
-      <div class="col-lg-4 text-center">
-        <img src="Brooklyn Bridge Park Comp 1 v2.jpg" alt="Brooklyn Bridge Park" style="border:2px solid whitesmoke">
-      </div>
-      <div class="col-lg-4 text-center">
-        <img src="HOCR_2018.jpg" alt="HOCR 2018" style="border:2px solid whitesmoke">
-      </div>
-      <div class="col-lg-4 text-center">
-        <img src="Star Trails.jpg" alt="Star Trails" style="border:2px solid whitesmoke">
-      </div>
-    </div>
-    
-    <div class="spacer20"></div>
-
-    <div class="row" style="margin:0px">
-      <div class="col-lg-4 text-center">
-        <img src="NYC SK GH 1 v2.jpg" alt="Top of the Rock" style="border:2px solid whitesmoke">
-      </div>
-      <div class="col-lg-4 text-center">
-        <img src="Mohegan Bluff.jpg" alt="Mohegan Bluff" style="border:2px solid whitesmoke">
-      </div>
-      <div class="col-lg-4 text-center">
-        <img src="RI Beach House Night.jpg" alt="Rhode Island" style="border:2px solid whitesmoke">
-      </div>
-    </div>
-
-    <div class="spacer20"></div>
-
-
-
+  
   </div>
 
 </body>
