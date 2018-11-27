@@ -7,6 +7,11 @@
 <title>Gino McFino</title>
 <link rel="shortcut icon" type="image/png" href="https://static1.squarespace.com/static/5884fd9b579fb38c0515c2e8/t/5919fa652e69cf5e4c048eca/1494874725259/large-donut.png"/>
 <link rel="stylesheet" href="mySite.css"/>
+<style type="text/css">
+  body {
+    background-image: url("https://images.wallpaperscraft.com/image/fern_leaf_hands_palms_autumn_117828_3840x2400.jpg");
+  }
+</style>
 
 
 
@@ -24,37 +29,49 @@
 <body>
 
   <!-- Navigation -->
-  <div class="topnav text-center">
-    <a class="active" href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
 
 
-  <div class="container">
+  <div class="container-fluid">
 
     <!-- Page Content -->
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1 class="mt-5" style="color:white;">Meet The Real GinoMcFino</h1>
+        <h1 class="mt-5" style="color:rgb(208, 224, 201);font-size:40pt;"><b>Meet the Real GinoMcFino</b></h1>
       </div>
     </div>
 
-    <div class="text-center">
-      <a target="_blank" href="http://google.com">Link to Google</a>
+    <div class="col-lg-6 offset-lg-3 text-center">
+      <p style="font-size:17pt">
+        Hello Everybody! My real name is Weiqi Ji. 
+        <br>
+        This is my website, so stick around and have some fun!
+        <br>
+        <br>
+        Apoligies if things load very slowly, I am still working on efficiency.
+      </p>
+      <p>(Recruiter? Click <a href="contact.html" style="color:rgb(255, 123, 0);"><b>HERE!</b></a>)</p> 
     </div>
+    
     <div class="col-lg-4 offset-lg-4 text-center">
-      <p>Hello Everybody! My name is actually Weiqi Ji <br> Get to know me!</p>
-    </div>
-    <div class="text-center">
-      <a target="_blank" href="BU Resume PDF.pdf" style="color:azure;font-size:20px;font-display: bold">View My Resume</a>
+      <p>P.S. Click on my picture for some SMOOTH jazz! :-)</p>
     </div>
 
 
     
     <div class="text-center">
       <audio id="audio" src="music.mp3" ></audio>
-      <img class="image" src="ji_crew.jpeg" alt="Picture of Me" width="300" height="300" onclick="play()" onclick="stop()"></img>
+      <img class="image" src="ji_crew.jpeg" alt="Picture of Me" style="width:300px;height:300px;border:3px solid whitesmoke;" onclick="play()"></img>
+    </div>
+
+    <div class="text-center">
+      <audio id="audio" src="music.mp3" ></audio>
+      <input type="button" value="Pause Music" onclick="stop()">
     </div>
 
 
