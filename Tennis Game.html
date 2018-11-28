@@ -1,0 +1,194 @@
+<html>
+
+<b>Tennis</b>
+
+<canvas id = "gameCanvas" width=800 height=600></canvas>
+
+<script>
+	//This is my first JavaScript game, and this is my modified version of tennis. Credit: Chris DeLeon of Gamekedo.
+	//Link: http://code-your-first-game.com
+
+	var canvas;
+	var canvasContext;
+	var showWinScreen=false;
+	var fps = 120;
+	var ballX = 100;
+	var ballY= 250;
+	var ballSpeedX=15/(fps/30);
+	var ballSpeedY=ballSpeedX/2;
+	var paddle1X=0 
+	var paddle1Y=250;
+	var paddle2Y = 250;
+	var player1Score=0
+	var player2Score=0
+	const PADDLE_HEIGHT =100;
+	const PADDLE_WIDTH =10;
+	const RADIUS = 10;
+	const WINNING_SCORE = 5;
+
+	function calculateMousePos(evt){
+		var rect = canvas.getBoundingClientRect();
+		var root = document.documentElement;
+		var mouseX = evt.clientX - rect.left - root.scrollLeft;
+		var mouseY = evt.clientY - rect.top - root.scrollTop;
+		return{
+			x:mouseX,
+			y:mouseY
+		}
+	}
+
+	function handleMouseClick(evt) {
+		if(showWinScreen){
+			player1Score=0;
+			player2Score=0;
+			showWinScreen = false;
+		}
+	}
+
+	window.onload = function() {
+		console.log("Hello World!");
+		console.log("A tennis game by Weiqi Ji");
+		console.log("Score 5 points to win, use the edge of the paddle to hit the ball at an angle.");
+		console.log("Ready player 1?")
+
+		canvas = document.getElementById('gameCanvas');
+		canvasContext = canvas.getContext('2d');
+
+		setInterval(function(){
+				moveEverything();
+				drawEverything();
+			}, 1000/fps);
+
+		canvas.addEventListener('mousemove',
+			function(evt){
+				var mousePos = calculateMousePos(evt);
+				paddle1Y= mousePos.y;
+				//paddle1X= mousePos.x; 
+			});
+
+		canvas.addEventListener('mousedown',handleMouseClick);
+
+	}
+
+	function stopGame() {
+		ballSpeedX=0;
+		ballSpeedY=0;
+		ballX=canvas.width/2;
+		ballY=canvas.height/2;
+	}
+
+	function ballReset() {
+		if(player1Score>=WINNING_SCORE || player2Score>=WINNING_SCORE){
+			showWinScreen = true;
+		} else{
+			ballSpeedX=-ballSpeedX;
+			ballX = canvas.width/2;
+			ballY = canvas.height/2;
+		}
+		
+	}
+
+	function computerMovement() {
+		var aiSpeed=2;
+		if(paddle2Y+PADDLE_HEIGHT/2+35<ballY){
+			paddle2Y+=aiSpeed;
+		}else if(paddle2Y+PADDLE_HEIGHT/2-35>ballY){
+			paddle2Y-=aiSpeed;
+		}
+	}
+
+	function moveEverything() {
+		if(showWinScreen){
+			return;
+		}
+
+		computerMovement();
+
+		ballX += ballSpeedX;
+		ballY += ballSpeedY;
+		var reflectionFactor =16
+		
+		if(ballX<RADIUS){
+			if(ballY>paddle1Y-PADDLE_HEIGHT/2 && ballY<paddle1Y+PADDLE_HEIGHT/2){
+				ballSpeedX=-ballSpeedX;
+				var deltaY = ballY-(paddle1Y);
+				ballSpeedY=deltaY/reflectionFactor;
+			} else if(ballX<0){
+				//score change must be before ballReset.
+				player2Score++;
+				ballReset();	
+			}
+		}
+		if(ballX>canvas.width-RADIUS){
+			if(ballY>paddle2Y && ballY<paddle2Y+PADDLE_HEIGHT){
+				ballSpeedX=-ballSpeedX;
+				var deltaY = ballY-(paddle2Y+PADDLE_HEIGHT/2);
+				ballSpeedY=deltaY/reflectionFactor;
+			}else if(ballX>canvas.width){
+				//score change must be before ballReset.
+				player1Score++;
+				ballReset();
+			}
+		}
+		if(ballY<RADIUS){
+			ballSpeedY=-ballSpeedY;
+		}
+		if(ballY>canvas.height-RADIUS){
+			ballSpeedY=-ballSpeedY;
+		}
+
+	}
+
+	function drawNet() {
+		for(var i=0; i<canvas.height; i+=40){
+			colorRect(canvas.width/2-1, i, 2, 20, 'white');
+		}
+	}
+
+	function drawEverything() {
+		//background
+		colorRect(0,0,canvas.width,canvas.height,'black');
+
+		if(showWinScreen){
+			if(player1Score>=WINNING_SCORE){
+				canvasContext.fillStyle = 'green';
+				canvasContext.fillText("Congradulations, you win!",342,250);
+			}else if(player2Score>=WINNING_SCORE){
+				canvasContext.fillStyle = 'green';
+				canvasContext.fillText("Game Over",375,250);
+			}
+
+			canvasContext.fillStyle = 'green';
+			canvasContext.fillText("Click to continue...",360,400);
+			return;
+		}
+
+		//net
+		drawNet();
+		//left paddle1
+		colorRect(paddle1X,paddle1Y-PADDLE_HEIGHT/2,PADDLE_WIDTH,PADDLE_HEIGHT,'white');
+		//right paddle2
+		colorRect(canvas.width-PADDLE_WIDTH,paddle2Y,PADDLE_WIDTH,PADDLE_HEIGHT,'white');
+		//ball
+		colorCircle(ballX,ballY,RADIUS,'yellow');
+		//scores on screen
+		canvasContext.fillText(player1Score,100,100);
+		canvasContext.fillText(player2Score,650,100);
+	}
+
+	function colorCircle(centerX, centerY, radius, drawColor){
+		canvasContext.fillStyle = drawColor;
+		canvasContext.beginPath();
+		canvasContext.arc(centerX,centerY,radius,0,Math.PI*2, true);
+		canvasContext.fill();
+	}
+
+	function colorRect(leftX, topY, width, height, drawColor){
+		canvasContext.fillStyle = drawColor;
+		canvasContext.fillRect(leftX, topY, width, height);
+	}
+
+</script>
+
+
+</html>
