@@ -2,95 +2,440 @@
 <html lang="en">
 
 <head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<meta charset="UTF-8">
-<title>Gino McFino</title>
-<link rel="shortcut icon" type="image/png" href="https://static1.squarespace.com/static/5884fd9b579fb38c0515c2e8/t/5919fa652e69cf5e4c048eca/1494874725259/large-donut.png"/>
-<link rel="stylesheet" href="mySite.css"/>
-<style type="text/css">
-  body {
-    background-image: url("https://images.wallpaperscraft.com/image/fern_leaf_hands_palms_autumn_117828_3840x2400.jpg");
-  }
-</style>
+  <title>Folio - Personal Portfolio Template</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- All the bootstrap stuff -->
+  <!-- Libraries CSS Files -->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/hover/hover.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="mySite.js"></script>
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 
+  <!-- Responsive css -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <!-- =======================================================
+    Theme Name: Folio
+    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
 </head>
 
-<body onload="myFunction()" style="margin:0;">
+<body>
 
-  <div id="loader"></div>
+  <!-- start section navbar -->
+  <nav id="main-nav">
+    <div class="row">
+      <div class="container">
 
-  <div style="display:none;" id="myDiv" class="animate-bottom">
-    
-    <!-- Navigation -->
-    <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+          <li><a href="#journal" class="smoothScroll">Blog</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
 
 
-      <div class="container-fluid">
+  <!-- start section header -->
+  <div id="header" class="home">
 
-        <!-- Page Content -->
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h1 class="mt-5" style="color:rgb(208, 224, 201);font-size:40pt;"><b>Meet the Real GinoMcFino</b></h1>
+    <div class="container">
+      <div class="header-content">
+        <h1>I'm <span class="typed"></span></h1>
+        <p>developer, photographer, 3D artist</p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End section header -->
+
+
+  <!-- start section about us -->
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/me.jpg" class="img-responsive" alt="me">
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-6 offset-lg-3 text-center">
-          <p style="font-size:12pt;font-style: italic">
-              *disclaimer: this website is built for fun and thus not meant for professional purposes*
-          </p>
-          <p style="font-size:17pt">
-            Hello Everybody! My real name is Weiqi Ji. 
-            <br>
-            This is my website, so stick around and have some fun!
-            <br>
-            <br>
-            Apoligies if things load very slowly, I built this website from scratch, and I am still working on efficiency.
-          </p>
-          <p>(Recruiter? Click <a href="contact.html" style="color:rgb(255, 123, 0);"><b>HERE!</b></a>)</p> 
+        <div class="col-lg-7">
+          <div class="about-descr">
+
+            <p class="p-heading">im a ux /ui designer austin based who loves clean, simple & unique design. i also enjoy crafting brand identities, icons, & ilustration work. </p>
+            <p class="separator">To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family.English person.</p>
+
+          </div>
+
         </div>
-        
-        <div class="col-lg-4 offset-lg-4 text-center">
-          <p>P.S. Click on my picture for some SMOOTH jazz! :-)</p>
-        </div>
-
-
-        
-        <div class="text-center">
-          <audio id="audio" src="Assets/Music/music.mp3" ></audio>
-          <img class="image" src="Assets/Thumbnails/ji_crew.jpeg" alt="Picture of Me" style="width:300px;height:300px;border:3px solid whitesmoke;" onclick="play()"></img>
-        </div>
-
-        <div class="text-center">
-          <audio id="audio" src="Assets/Music/music.mp3" ></audio>
-          <input type="button" value="Pause Music" onclick="stop()">
-        </div>
-
-        <div class="spacer100"></div>
-
-
       </div>
+    </div>
+  </div>
+  <!-- end section about us -->
+
+
+  <!-- start section services -->
+  <div id="services">
+    <div class="container">
+
+        <div class="services-carousel owl-theme">
+
+          <div class="services-block">
+
+            <i class="ion-ios-browsers-outline"></i>
+            <span>UI/UX DESIGN</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-lightbulb-outline"></i>
+            <span>BRAND IDENTITY</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-color-wand-outline"></i>
+            <span>WEB DESIGN</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-social-android-outline"></i>
+            <span>MOBILE APPS</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-analytics-outline"></i>
+            <span>Analytics</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-camera-outline"></i>
+            <span>PHOTOGRAPHY</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+        </div>
 
     </div>
 
   </div>
+  <!-- end section services -->
 
-  
+
+  <!-- start section portfolio -->
+  <div id="portfolio" class="text-center paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>My Portfolio</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="portfolio-list">
+
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all">all</li>
+              <li class="filter" data-filter=".branding">branding</li>
+              <li class="filter" data-filter=".mockups">mockups</li>
+              <li class="filter" data-filter=".uikits">ui kits</li>
+              <li class="filter" data-filter=".webdesign">web design</li>
+              <li class="filter" data-filter=".photography">photography</li>
+            </ul>
+
+          </div>
+
+          <div class="portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+              <a class="popup-img" href="images/portfolio/1.jpg">
+                <img src="images/portfolio/1.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+              <a class="popup-img" href="images/portfolio/2.jpg">
+                <img src="images/portfolio/2.jpg"  alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
+              <a class="popup-img" href="images/portfolio/3.jpg">
+                <img src="images/portfolio/3.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
+              <a class="popup-img" href="images/portfolio/4.jpg">
+                <img src="images/portfolio/4.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
+              <a class="popup-img" href="images/portfolio/5.jpg">
+                <img src="images/portfolio/5.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/portfolio/6.jpg">
+                <img src="images/portfolio/6.jpg" alt="img">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section portfolio -->
+
+
+  <!-- start section journal -->
+  <div id="journal" class="text-left paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>journal</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="journal-block">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="blog-single.html"><img src="images/blog-post-1.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
+                <p class="separator">To an English person, it will seem like simplified English
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="blog-single.html"><img src="images/blog-post-2.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
+                <p class="separator">To an English person, it will seem like simplified English
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="blog-single.html"><img src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
+                <p class="separator">To an English person, it will seem like simplified English
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section journal -->
+
+
+  <!-- start sectoion contact -->
+  <div id="contact" class="paddsection">
+    <div class="container">
+      <div class="contact-block1">
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="contact-contact">
+
+              <h2 class="mb-30">GET IN TOUCH</h2>
+
+              <ul class="contact-details">
+                <li><span>23 Main, Street</span></li>
+                <li><span>New York, United States</span></li>
+                <li><span>+88 01912704287</span></li>
+                <li><span>example@example.com</span></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="row">
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+
+                <div class="col-lg-6">
+                  <div class="form-group contact-block1">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start sectoion contact -->
+
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+        </ul>
+
+      </div>
+
+      <p>&copy; Copyrights Folio. All rights reserved.</p>
+
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- End section footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 
 </body>
 
