@@ -629,3 +629,10 @@ nav ul li a {
 .credits {
   font-size: 13px;
 }
+
+
+
+/* MY ADDITIONS */
+.top-buffer {
+  margin-top: 20px;
+}
