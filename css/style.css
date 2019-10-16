@@ -297,11 +297,12 @@ nav ul li a {
 #about .div-img-bg {
   padding-bottom: 30px;
   border: 20px solid #b8a07e;
+  box-shadow: 00px 0px 35px 20px rgb(224, 137, 37);
 }
 
 #about .div-img-bg .about-img img {
   width: 100%;
-  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 0px 35px 20px rgba(0, 110, 255, 0.842);
   margin-top: -60px;
   margin-left: 40px;
   height: 400px;
