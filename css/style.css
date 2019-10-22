@@ -245,8 +245,22 @@ nav ul li a {
   width: 100%;
 }
 
+#header2 {
+  background: url("../images/theeleventhhour.jpg") repeat scroll center center / cover;
+  height: 100vh;
+  width: 100%;
+}
 
 #header .header-content {
+  height: 100vh;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#header2 .header-content {
   height: 100vh;
   text-align: left;
   width: 100%;
