@@ -1,0 +1,11 @@
+Template Atail
+
+Changes:
+    js => production_main.js, atail.js, allProjects.js, projectPreview.js, promise-ajax.js;
+    scss => map.scss
+
+Add:
+    Google Maps API in Contact.html
+    Contact-form.js
+    Serialize.js
+    clean-form.js
