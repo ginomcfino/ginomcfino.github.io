@@ -6327,7 +6327,7 @@ figure p {
      object-fit: cover;
 }
 
-.figure-extended h1 {
+/* .figure-extended h1 {
   position: absolute;
   z-index: 2;
   bottom: 15%;
@@ -6335,9 +6335,17 @@ figure p {
   width: 90%;
   padding-left: 30px;
   color: #fff;
+} */
+
+.figure-extended h1 {
+  /* text-transform: uppercase; */
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  transform: translate(-50%, -50%);
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .figure-extended h1 {
     width: 60%;
   }
@@ -6345,12 +6353,12 @@ figure p {
 
 @media (min-width: 992px) {
   .figure-extended h1 {
-    left: 16.666%;
-    width: 80%;
+    left: 30%;
+    width: 100%;
     max-width: 560px;
     padding-left: 0;
   }
-}
+} */
 
 .figure-extended .atail-multitext {
   position: absolute;

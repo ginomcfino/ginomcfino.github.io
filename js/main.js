@@ -6691,3 +6691,19 @@
 
 /***/ }
 /******/ ]);
+
+$(document).ready(function() {
+	// ========================================================================= //
+  //  Typed Js
+  // ========================================================================= //
+
+  var typed = $(".typed");
+
+  $(function() {
+    typed.typed({
+      strings: ["Hello World!", "I am a...", "Student,", "Photographer,", "Developer,", "Creator.", "I am Ji."],
+      typeSpeed: 100,
+      loop: false,
+    });
+  });
+})
