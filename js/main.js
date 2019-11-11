@@ -6701,7 +6701,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Hello World!", "I am a...", "Student,", "Photographer,", "Developer,", "Creator.", "I am Ji."],
+      strings: ["Hello World!", "I am a...", "Student,", "Photographer,", "Developer.", "I am Ji."],
       typeSpeed: 100,
       loop: false,
     });
