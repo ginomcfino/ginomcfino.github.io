@@ -8809,7 +8809,7 @@ p > img {
 }
 
 .preview-images-item img {
-  font-family: 'object-fit: cover;';
+  font-family: 'object-fit: contain;';
   position: absolute;
   top: 0;
   left: -110%;

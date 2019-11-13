@@ -1,20 +1,15 @@
 {
 	"status": "success",
 	"title": "Photo Portraits",
-	"link": "http://template.atail.itembridge.com/projects/Chinese-girl-posing.html",
+	"link": "https://ginomcfino.github.io/projects/FT201_Photo_Portraits",
 	"content": "I created these photo portraits of my classmate Devin Hunziker for my FT201 Screen Language class. The goal was to showcase six important techniques commonly used in portrait photography. ",
 	"date": "<span class=\"atail-project-date\"><span class=\"atail-proj-date-text\">Finished </span><span class=\"atail-proj-date-value\">- 22 Jun 2016</span></span>",
-	"thumbnail": "<img width=\"1200\" height=\"911\" src=\"img/borders.jpg\" alt=\"pexels-photo-69494\" />",
-	"thumbnail_url": "img/borders.jpg",
-	"positions": null,
-	"token": "865fc8f5ec",
-	"participants": "<span class=\"post-content-footer-title\">Participants</span>",
 	"slides": [
 		{
 			"src": {
 				"img": "img/project-preview/dimensionality.jpg",
-				"title": "",
-				"text": "",
+				"title": "Dimensionality",
+				"text": "blah blah blah testing s=",
 				"fit": "cover"
 			},
 			"fit": "cover",
@@ -60,5 +55,17 @@
 			"fit": "cover",
 			"type": "image"
 		}
-	]
+	],
+	"positions": [
+		{
+			"title": "Photographer",
+			"url": "Weiqi Ji"
+		},
+		{
+			"title": "Subject",
+			"url": "Devin Hunziker"
+		}
+	],
+	"token": "865fc8f5ec",
+	"participants": "<span class=\"post-content-footer-title\">Participants</span>"
 }
