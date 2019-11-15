@@ -1,11 +1,27 @@
 {
 	"status": "success",
-	"title": "Bard bags collection",
-	"link": "http://template.atail.itembridge.com/projects/Bard-bags-collection.html",
-	"content": "Here is where I really need “fast” lenses, good zoom lenses, patience and luck. Feel the magic of the moment. A photographer portfolio fully displays his way to see the world and feel its beauty. Photography opens my eyes and my soul to exclusively fantastic things. Open your eyes and don't miss any beautiful detail!\r\n",
+	"title": "Expulsion from the Garden of Eden",
+	"link": "https://ginomcfino.github.io/projects/FT201_Sound_Response",
+	"content": "An auditory interpretation of Explusion from the Garden of Eden by Thomas Cole while paying homage to the original biblical story. <b> (click the arrow to view it in color!)</b> \r\n",
 	"date": "<span class=\"atail-project-date\"><span class=\"atail-proj-date-text\">Finished </span><span class=\"atail-proj-date-value\">- 22 Jun 2016</span></span>",
-	"slides": null,
-	"positions": null,
+	"slides": [
+		{
+			"src": {
+				"img": "img/project-preview/thomas_cole_color.jpg",
+				"title": "Expulsion from the Garden of Eden - Thomas Cole",
+				"text": "",
+				"fit": "cover"
+			},
+			"fit": "cover",
+			"type": "image"
+		}
+	],
+	"positions": [
+		{
+			"title": "Artist",
+			"url": "Thomas Cole"
+		}
+	],
 	"token": "865fc8f5ec",
-	"participants": "<span class=\"post-content-footer-title\">Participants</span>"
+	"participants": "<span class=\"post-content-footer-title\"></span>"
 }
