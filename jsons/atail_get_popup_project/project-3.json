@@ -1,14 +1,54 @@
 {
 	"status": "success",
-	"title": "Expulsion from the Garden of Eden",
-	"link": "https://ginomcfino.github.io/projects/FT201_Sound_Response",
-	"content": "An auditory interpretation of Explusion from the Garden of Eden by Thomas Cole while paying homage to the original biblical story. <b> (click the arrow to view it in color!)</b> \r\n",
+	"title": "Photo Portraits",
+	"link": "https://ginomcfino.github.io/projects/FT201_Photo_Portraits",
+	"content": "I created these photo portraits of my classmate Devin Hunziker for my FT201 Screen Language class. The goal was to showcase six important techniques commonly used in portrait photography. ",
 	"date": "<span class=\"atail-project-date\"><span class=\"atail-proj-date-text\">Finished </span><span class=\"atail-proj-date-value\">- 22 Jun 2016</span></span>",
 	"slides": [
 		{
 			"src": {
-				"img": "img/project-preview/thomas_cole_color.jpg",
-				"title": "Expulsion from the Garden of Eden - Thomas Cole",
+				"img": "img/project-preview/dimensionality.jpg",
+				"title": "Dimensionality",
+				"text": "blah blah blah testing s=",
+				"fit": "cover"
+			},
+			"fit": "cover",
+			"type": "image"
+		},
+		{
+			"src": {
+				"img": "img/project-preview/body_detail.jpg",
+				"title": "",
+				"text": "",
+				"fit": "cover"
+			},
+			"fit": "cover",
+			"type": "image"
+		},
+		{
+			"src": {
+				"img": "img/project-preview/unnatural_light.jpg",
+				"title": "",
+				"text": "",
+				"fit": "cover"
+			},
+			"fit": "cover",
+			"type": "image"
+		},
+		{
+			"src": {
+				"img": "img/project-preview/warm_colors.jpg",
+				"title": "",
+				"text": "",
+				"fit": "cover"
+			},
+			"fit": "cover",
+			"type": "image"
+		},
+		{
+			"src": {
+				"img": "img/project-preview/color_contrast.jpg",
+				"title": "",
 				"text": "",
 				"fit": "cover"
 			},
@@ -18,10 +58,14 @@
 	],
 	"positions": [
 		{
-			"title": "Artist",
-			"url": "Thomas Cole"
+			"title": "Photographer",
+			"url": "Weiqi Ji"
+		},
+		{
+			"title": "Subject",
+			"url": "Devin Hunziker"
 		}
 	],
 	"token": "865fc8f5ec",
-	"participants": "<span class=\"post-content-footer-title\"></span>"
+	"participants": "<span class=\"post-content-footer-title\">Participants</span>"
 }
