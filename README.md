@@ -1,2 +1,3 @@
 # MyPortfolio
-Making a portfolio website for myself.
+
+Making a portfolio website for myself :)
