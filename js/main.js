@@ -79,8 +79,8 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Hello World!", "I am a...", "Student,", "Developer,", "Photographer,", "Innovator.", "I am Ji."],
-      typeSpeed: 100,
+      strings: ["Hello World!", "I am a...", "Student,", "Developer,", "Photographer,", "Innovator,", "I am Ji."],
+      typeSpeed: 70,
       loop: false,
     });
   });
