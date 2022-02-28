@@ -6,6 +6,30 @@
   Author URL: https://bootstrapmade.com
 */
 
+
+/* my additions */
+
+button {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+              -6px -6px 12px #ffffff;
+ }
+ 
+ button:hover {
+  border: 1px solid white;
+ }
+ 
+ button:active {
+  box-shadow: 4px 4px 12px #c5c5c5,
+              -4px -4px 12px #ffffff;
+ }
+
 /*  General Styling
 /*-----------------------------------------------------------------------------------*/
 
@@ -148,6 +172,10 @@ p {
 .form-control:focus {
   box-shadow: none;
   outline: 0 none;
+}
+
+#about_anchor {
+  padding-top: 90px;
 }
 
 .paddsection {
@@ -314,13 +342,13 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #header {
-  background: url("../images/pentagons-abstract.jpg") repeat scroll center center / cover;
+  background: url("../images/RI_beach_house.jpg") repeat scroll center center / cover;
   height: 100vh;
   width: 100%;
 }
 
 #header2 {
-  background: url("../images/theeleventhhour.jpg") repeat scroll center center / cover;
+  background: url("../images/pentagons-abstract.jpg") repeat scroll center center / cover;
   height: 100vh;
   width: 100%;
 }
@@ -380,20 +408,22 @@ nav ul li a {
   width: 100%;
   height: auto;
   background: #f7f7f7;
-  padding-top: 190px;
+  padding-top: 110px;
 }
 
 #about .div-img-bg {
   padding-bottom: 30px;
   border: 20px solid #b8a07e;
+  box-shadow: 6px 6px 12px #c5c5c5,
+              -6px -6px 12px #ffffff;
   /* box-shadow: 00px 0px 35px 20px rgb(224, 137, 37); */
 }
 
 #about .div-img-bg .about-img img {
   width: 100%;
   /* box-shadow: 0px 0px 35px 20px rgba(0, 110, 255, 0.842); */
-  margin-top: -60px;
-  margin-left: 40px;
+  margin-top: -50px;
+  margin-left: 30px;
   height: 400px;
   object-fit: cover;
 }
