@@ -398,12 +398,12 @@ nav ul li a {
 .header-content .list-social li {
   float: none;
   margin-right: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .header-content .list-social li i {
   color: #fff;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 /*-----------------------------------------------------------------------------------*/
