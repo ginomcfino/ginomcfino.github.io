@@ -19,16 +19,23 @@ button {
   transition: all .3s;
   box-shadow: 6px 6px 12px #c5c5c5,
               -6px -6px 12px #ffffff;
- }
+}
  
- button:hover {
+button:hover {
   border: 1px solid white;
- }
- 
- button:active {
+}
+
+button:active {
   box-shadow: 4px 4px 12px #c5c5c5,
               -4px -4px 12px #ffffff;
- }
+}
+
+button-newbg {
+  background: #ff0000;
+}
+
+/* button2 */
+
 
 /*  General Styling
 /*-----------------------------------------------------------------------------------*/
@@ -590,12 +597,14 @@ nav ul li a {
 
 .portfolio-thumbnail {
   margin-bottom: 30px;
+  aspect-ratio: 16 / 8.4;
   overflow: hidden;
-  min-height: 260px;
 }
 
 .portfolio-thumbnail img {
   max-width: 100%;
+  max-height: max-content;
+  align-items: center;
 }
 
 /*-----------------------------------------------------------------------------------*/
