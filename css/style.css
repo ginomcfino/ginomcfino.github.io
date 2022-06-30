@@ -9,7 +9,7 @@
 
 /* my additions */
 
-button {
+.button2 {
   color: #090909;
   padding: 0.7em 1.7em;
   font-size: 18px;
@@ -21,17 +21,36 @@ button {
               -6px -6px 12px #ffffff;
 }
  
-button:hover {
+.button2:hover {
   border: 1px solid white;
 }
 
-button:active {
+.button2:active {
   box-shadow: 4px 4px 12px #c5c5c5,
               -4px -4px 12px #ffffff;
 }
 
-button-newbg {
-  background: #ff0000;
+.button1 {
+  color: rgb(255, 255, 255);
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: rgba(163, 195, 255, 0.483);
+  border: 1px solid rgb(249, 217, 77);
+  transition: all .3s;
+  box-shadow: 6px 6px 12px rgb(110, 10, 176),
+              -6px -6px 12px rgb(249, 217, 77);
+}
+ 
+.button1:hover {
+  /* transition: all .3s; */
+  color: rgb(14, 222, 66);
+  box-shadow: 4px 4px 12px rgb(14, 222, 66),
+              -4px -4px 12px rgb(249, 217, 77);
+}
+
+.button1:active {
+  background: rgb(249, 217, 77);
 }
 
 /* button2 */
